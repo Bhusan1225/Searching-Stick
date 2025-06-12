@@ -32,3 +32,4 @@ namespace Gameplay
 	{
 		gameplay_controller->reset();
 	}
+}
