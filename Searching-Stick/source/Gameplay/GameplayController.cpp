@@ -5,9 +5,6 @@
 namespace Gameplay
 {
 
-
-
-
 	void GameplayController::destroy()
 	{
 		delete(gameplay_view);

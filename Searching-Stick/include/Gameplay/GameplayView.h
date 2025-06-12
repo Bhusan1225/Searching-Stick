@@ -1,4 +1,6 @@
 #pragma once
+#include <SFML/Graphics.hpp>
+#include "UI/UIElement/ImageView.h"
 
 namespace Gameplay
 {
@@ -6,6 +8,15 @@ namespace Gameplay
 
     class GameplayView
     {
+    private:
+        const float background_alpha = 55.f;
+
+        GameplayController* gameplay_controller;
+        UI::UIElement::ImageView* background_image;
+
+        sf::Font font;
+
+        void initializeBackgroundImage();
 
     public:
         GameplayView();
