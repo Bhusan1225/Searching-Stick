@@ -74,7 +74,9 @@ namespace UI
 
         void MainMenuUIController::linearSearchButtonCallback()
         {
-            // GameState will change to gameplay state.
+            ServiceLocator::getInstance()->getSoundService()->playSound(SoundType::BUTTON_CLICK);
+            GameService::setGameState(GameState::GAMEPLAY);
+            ServiceLocator::getInstance()->getGameplayService()->searchElement(Gameplay::Collection::SearchType::LINEAR_SEARCH);// GameState will change to gameplay state.
             ServiceLocator::getInstance()->getSoundService()->playSound(SoundType::BUTTON_CLICK);
         }
 
