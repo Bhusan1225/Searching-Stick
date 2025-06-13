@@ -35,4 +35,9 @@ namespace Gameplay
 	{
 		gameplay_controller->reset();
 	}
+
+	void GameplayService::searchElement(/*Collection::SearchType search_type*/)
+	{
+		//collection_controller->searchElement(search_type);
+	}
 }
